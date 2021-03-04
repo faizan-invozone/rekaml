@@ -1,0 +1,9 @@
+django
+djangorestframework
+markdown
+django-filter
+gensim
+nltk
+xlrd
+keras
+tensorflow

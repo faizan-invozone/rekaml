@@ -1,0 +1,111 @@
+{ 1
+# Bedroom 8:00am Alexa
+Alexa, snooze my alarm for five minutes
+}
+{ 2
+# Bedroom 8:05am Alexa
+Alexa, turn off my alarm
+}
+{ 3
+# Breakfast Tim_Hortons
+Can I have a farmer’s wrap with sausage?
+One small french vanilla
+}
+{ 4
+# Starbucks 9:05am Work Manager_Jil
+Sorry that I’m late
+}
+{ 5
+# Starbucks 9:30am Work
+What can I get for you?
+One venti pumpkin spice latte right up
+Hi, how are you doing today?
+And for you ma’am?
+}
+{ 6 
+# Starbucks 11:55am Regular_Customer_Friend_Steve Work
+Hi Steve, how are you? 
+Jen and I had so much fun last weekend
+You caught me right before my shift ended
+Got your regular order for you
+}
+{ 7
+# Kinesiology Lecture Davis_Centre TA_Leo
+Do you have any comments on my last revision for the paper?
+Laura and Steph are also part of my group
+It is due tonight at 11:59pm
+Thank you, have a good day
+}
+{ 8
+# Living Room Roommate_Jen 7:00pm
+Jen, I’m home
+I saw Steve today, he asked about you
+I’m pretty sure he’s single
+What’s for dinner today?
+I have to finish my paper tonight
+}
+{ 9
+# Bedroom 8:00am Alexa
+Alexa, turn off my alarm
+}
+{ 10
+# Breakfast Tim Hortons
+Sentence: Can I have a farmer’s wrap with sausage?
+Sentence: One small french vanilla
+}
+{ 11
+# Starbucks 8:50am Work Manager_Jil
+Hi Jil, how’s it going?
+Haha, I’m not late today
+}
+{ 12
+# Starbucks 11:55am Regular_Customer_Friend_Steve Work
+Hi Steve
+Got your regular order for you
+I can ask her, I’m sure Jen will be down
+}
+{ 13
+# Living Room Roommate_Jen 7:00pm
+I’m home
+So… Steve asked if you wanted to hang on Friday
+Hold on my uncle is calling
+}
+{ 14
+# Bedroom Mama 7:15pm
+Hi Mama, what’s up?
+Did Nikki talk to you today?
+Okay, did you take your medications?
+How’s Meema?
+I’m good, I just got home, I’m super tired, can I call you this weekend?
+Bye, shub ratri
+}
+{ 15
+# Living Room Roommate_Jen 7:30pm
+Yo, I’m back, where are you?
+}
+{ 16
+# Jen’s Bedroom Roommate_Jen 7:30pm
+Do you have any homework tonight?
+Finally!
+I’m actually super hungry
+Want to get Thai Express?
+}
+{ 17
+# Thai_Express Roommate_Jen 8:00pm
+Can you give me a minute please?
+Jen, what are you getting?
+Can I get a Tofu Pad Seew Spicy, no egg
+Visa
+}
+{ 18
+# Living Room Roommate_Jen 8:45pm Netflix
+Want to watch Sherlock?
+I feel bad for Watson, he looks so sad
+I swear he’s not allowed to feel emotions
+Why is there a carrot in my food?
+}
+{ 19
+# Living Room Roommate_Jen 11:45pm
+I’m super tired, gotta be up early tomorrow
+Night night jenkins!
+}
