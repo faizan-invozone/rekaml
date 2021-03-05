@@ -1,5 +1,6 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from django.shortcuts import HttpResponse
 from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth.models import User
 from rest_framework import status
@@ -8,6 +9,7 @@ from multiprocessing import Process
 from pathlib import Path
 from rest_framework.parsers import MultiPartParser, FormParser
 import os
+from wsgiref.util import FileWrapper
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 class UsersView(APIView):
@@ -50,3 +52,51 @@ class FineTuneModelView(APIView):
             )
         process.start()
         return Response({'data': 'received'})
+
+
+class TunedDictionaryView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def get(self, request, format=None):
+        dir = '{}/models/{}_{}/1/dictionary.txt'.format(BASE_DIR, request.user.id, request.user.username)
+        if not os.path.isfile(dir):
+            return Response({'error': 'file not found'}, status=status.HTTP_404_NOT_FOUND)
+        short_report = open(dir, 'rb')
+        response = HttpResponse(FileWrapper(short_report), content_type='text/plain')
+        return response
+
+
+class TunedTagDictionaryView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def get(self, request, format=None):
+        dir = '{}/models/{}_{}/1/tag_dictionary.txt'.format(BASE_DIR, request.user.id, request.user.username)
+        if not os.path.isfile(dir):
+            return Response({'error': 'file not found'}, status=status.HTTP_404_NOT_FOUND)
+        short_report = open(dir, 'rb')
+        response = HttpResponse(FileWrapper(short_report), content_type='text/plain')
+        return response
+
+
+class TunedTagVectorsView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def get(self, request, format=None):
+        dir = '{}/models/{}_{}/1/tag_vectors.txt'.format(BASE_DIR, request.user.id, request.user.username)
+        if not os.path.isfile(dir):
+            return Response({'error': 'file not found'}, status=status.HTTP_404_NOT_FOUND)
+        short_report = open(dir, 'rb')
+        response = HttpResponse(FileWrapper(short_report), content_type='text/plain')
+        return response
+
+
+class TunedUsedCountView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def get(self, request, format=None):
+        dir = '{}/models/{}_{}/1/used_count.txt'.format(BASE_DIR, request.user.id, request.user.username)
+        if not os.path.isfile(dir):
+            return Response({'error': 'file not found'}, status=status.HTTP_404_NOT_FOUND)
+        short_report = open(dir, 'rb')
+        response = HttpResponse(FileWrapper(short_report), content_type='text/plain')
+        return response
